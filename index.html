@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Sportif</title>
+    <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <ul class="flex">
+          <li><a href="./page-article/foot.html">Foot</a></li>
+          <li><a href="./page-article/tennis.html">Velo</a></li>
+          <li><a href="./page-article/velo.html">Cyclisme</a></li>
+        </ul>
+        <h2>FVT</h2>
+        <ul class="flex">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="#hero-banner">Articles</a></li>
+          <li><a href="">A propos</a></li>
+        </ul>
+      </nav>
+      <div class="hero-banner flex">
+        <div class="text">
+          <h1>Bienvenue sur FVT</h1>
+          <p>
+            Ici vous retrouverez des articles concernants
+            <span class="foot">le foot</span>,
+            <span class="tennis">le tennis</span> et
+            <span class="velo">le cyclisme</span>.
+          </p>
+          <button>Découvrir les articles</button>
+        </div>
+        <div class="picture"></div>
+      </div>
+    </header>
+    <main>
+      <section class="article flex">
+        <div class="article-tennis box">
+          <div class="square" id="tennis">
+            <h2 style="color: var(--rouge)">Tennis</h2>
+          </div>
+        </div>
+        <div class="article-foot box">
+          <div class="square" id="foot">
+            <h2 style="color: var(--vert)">Foot</h2>
+          </div>
+        </div>
+        <div class="article-velo box" id="hero-banner">
+          <div class="square" id="velo">
+            <h2 style="color: var(--jaune)">Cyclisme</h2>
+          </div>
+        </div>
+      </section>
+      <section class="apropos">
+        <h2>
+          Découvre l'Univers du <span class="foot">foot</span>, du
+          <span class="tennis">tennis</span> et du
+          <span class="velo">cyclisme</span> avec nous
+        </h2>
+        <p>
+          Salut à tous et bienvenue sur notre blog dédié aux passionnés de sport
+          ! Ici, nous célébrons la passion du foot, la précision du tennis et
+          l'endurance du cyclisme. Que tu sois un fanatique de football, un
+          amateur de tennis ou un cycliste en herbe, ce blog est fait pour toi.
+        </p>
+      </section>
+      <section class="contact">
+        <h3>Adresse mail:</h3>
+        <p>fvt.blog@gmail.com</p>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
