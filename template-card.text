@@ -1,0 +1,10 @@
+<div class="box">
+        <div class="picture"></div>
+        <h3>Titre de l'article</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit
+          doloremque tempore, tenetur sunt reiciendis aut sed repudiandae
+          quisquam amet!
+        </p>
+        <a href="">Lire l'article</a>
+      </div>

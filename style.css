@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
-    --color1 : black;
-    --color2: white;
+    --color2 : black;
+    --color1: white;
     --vert : #30e585;
     --jaune : #ffd745;
     --rouge : #ff9253;
@@ -29,7 +29,7 @@ nav{
     border: 2px solid var(--color1);
     margin: 0.1px;
     background: var(--color1);
-    color: white;
+    color: black;
     height: 5vh;
 }
 nav ul {
@@ -41,7 +41,7 @@ li{
 }
 li a {
     text-decoration: none;
-    color: white;
+    color: black;
     position: relative;
     /* transition: 0.3s ease; */
 }
@@ -97,13 +97,13 @@ li a:hover::before{
 .text button:hover{
     transform: translateY(+20px);
 }
-.foot{
+.tripleA{
     color: var(--vert);
 }
-.tennis{
+.inde{
     color: var(--rouge);
 }
-.velo{
+.favoris{
     color: var(--jaune);
 }
  /* picture hero-banner */
@@ -122,7 +122,6 @@ li a:hover::before{
     height: 90vh;
     width: 30%;
     border: 2px solid var(--color2);
-    filter: grayscale(100%);
     transition: ease-in 0.3s;
 }
 .box:hover{
@@ -141,20 +140,11 @@ li a:hover::before{
     align-items: center;
     transition: ease 1s;
 }
-.article-tennis{
-    background: url(./assets/photo/renith-tennis.jpg) center/cover;
-}
 .article-tennis .square{
     border: 2px solid var(--rouge);
 }
-.article-foot{
-    background: url(./assets/photo/ben-weber-foot.jpg) center/cover;
-}
 .article-foot .square{
     border: 2px solid var(--vert);
-}
-.article-velo{
-    background: url(./assets/photo/dan-russo-velo.jpg) center/cover;
 }
 .article-velo .square{
     border: 2px solid var(--jaune);

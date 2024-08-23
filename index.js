@@ -1,14 +1,13 @@
-const tennis = document.getElementById("tennis");
-const velo = document.getElementById("velo");
-const foot = document.getElementById("foot");
-console.log(tennis, foot, velo);
+const tripleA = document.getElementById("tripleA");
+const inde = document.getElementById("inde");
+const favoris = document.getElementById("favoris");
 
-tennis.addEventListener("click", (e) => {
-  window.location.replace("./page-article/tennis.html");
+tripleA.addEventListener("click", (e) => {
+  window.location.replace("./page-article/tripleA.html");
 });
-velo.addEventListener("click", (e) => {
-  window.location.replace("./page-article/velo.html");
+inde.addEventListener("click", (e) => {
+  window.location.replace("./page-article/Inde.html");
 });
-foot.addEventListener("click", (e) => {
-  window.location.replace("./page-article/foot.html");
+favoris.addEventListener("click", (e) => {
+  window.location.replace("./page-article/favoris.html");
 });
