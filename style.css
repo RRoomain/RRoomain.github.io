@@ -2,10 +2,9 @@
 :root{
     --color2 : black;
     --color1: white;
-    --vert : #30e585;
-    --jaune : #ffd745;
-    --rouge : #ff9253;
-    --gold : goldenrod;
+    --favoris : #B077C9;
+    --inde : #9EE06F;
+    --tripleA : #0161D4;
     --font1 : "Roboto";
 }
 *{
@@ -15,7 +14,7 @@
 
 body{
     font-family: var(--font1);
-    background: var(--color1);
+    background: var(--color2);
     color: var(--color2);
     margin-right: 1px;
 }
@@ -25,15 +24,21 @@ body{
     justify-content: space-around;
 }
 nav{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 250px;
     padding: 15px;
-    border: 2px solid var(--color1);
+    border: none;
     margin: 0.1px;
-    background: var(--color1);
+    background: var(--inde);
     color: black;
     height: 5vh;
+    width: 50%;
 }
 nav ul {
-    width: 40%;
+    width: 100%;
 }
 li{
 
@@ -61,7 +66,7 @@ li a::before{
     position: absolute;
     height: 2px;
     width: 102%;
-    background:var(--color1);
+    background:var(--inde);
     z-index: 2;
     left: 50%;
     top: 100%;
@@ -71,105 +76,59 @@ li a::before{
 li a:hover::before{
     transform: translateX(100px);
 }
-
-.hero-banner{
-    height: 90vh;
-    border-top: 2px solid var(--color2);
-    border-bottom: 2px solid var(--color2);
-}
 /* text hero-banner */
-.text h1{
-    font-size :3.5rem; 
-    padding: 5px 0  ;
-}
-.text p{
-    font-size: 1rem;
-    padding: 5px 0;
-}
-.text button{
-    padding: 10px 15px;
-    background: var(--color2);
-    color: var(--color1);
-    border: none;
-    font-size: 1.2rem;
-    transition: transform 0.5s ease-in;
-}
-.text button:hover{
-    transform: translateY(+20px);
-}
-.tripleA{
-    color: var(--vert);
-}
-.inde{
-    color: var(--rouge);
-}
-.favoris{
-    color: var(--jaune);
-}
- /* picture hero-banner */
-.picture{
-    width: 500px;
-    height: 500px;
-    border-radius: 250px;
-    background: url(./assets/logo.png) center/cover;
-}
-.article{
-    height: 100vh;
-    border-bottom: 2px solid var(--color2);
-}
-.box{
-    position: relative;
-    height: 90vh;
-    width: 30%;
-    border: 2px solid var(--color2);
-    transition: ease-in 0.3s;
-}
-.box:hover{
-    filter: sepia(0);
-    width: 35%;
-}
-.square{
+.hero-banner{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 200px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: ease 1s;
+    border: 1px solid var(--inde);
+    padding: 15px;
 }
-.article-tennis .square{
-    border: 2px solid var(--rouge);
+h1{
+    color: var(--inde);
+    font-size: 5rem;
 }
-.article-foot .square{
-    border: 2px solid var(--vert);
-}
-.article-velo .square{
-    border: 2px solid var(--jaune);
-}
-.apropos{
-    height: 30vh;
-    border-bottom: 2px solid var(--color2);
-    text-align: center;
+.rest-header{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px
+    ;
 }
-.apropos h2{
-    font-size: 2rem;
+p{
+    color: var(--inde);
+    font-size: 3rem;
 }
-.apropos p{
-    font-size: 1.5rem;
+
+button{
+    padding: 10px 20px;
+    background: var(--inde);
+    border: none;
+    border-radius: 150px;
+    
 }
-.contact{
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 2px solid var(--color2);
-    border-top: none;
+button:hover{
+    animation: sboing 2s;
 }
+ button a{
+    text-decoration: none;
+    color: black;
+ }
+
+ @keyframes sboing{
+    0%{
+        transform: scaleX(0.8);
+    }
+    50%{
+        transform: scaleX(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+ }
